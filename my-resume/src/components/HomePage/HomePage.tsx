@@ -26,7 +26,7 @@ export const HomePage = ({ info }: CardProps) => {
         </button>
       </div>
       <div className={styles.home__inner}>
-        <div className={styles["home__inner-block"]}></div>
+        {/* <div className={styles["home__inner-block"]}></div> */}
         <div className={styles["home__inner-foto"]}>
           <Icon name="ellipse" className={styles["home__inner-icon"]} />
           <img

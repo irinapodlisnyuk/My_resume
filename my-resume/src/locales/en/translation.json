@@ -5,5 +5,8 @@
   "menu_projects": "My Projects",
   "greetings": "Hi,  I’M  {{name}}",
   "about_text": "I am a freelancer, Frontend developer, based in Novorossiysk, Russia. I enjoy creating modern, responsive, and intuitive websites and applications that turn your ideas into successful digital products.",
-  "button_resume": "My Resume"
+  "button_resume": "My Resume",
+  "about_me": "About Me",
+  "about_me_text":"Hi! I specialize in creating engaging, responsive, and accessible digital experiences for all types of users. I transform ideas into clear and effective websites and apps. My key work standards are: Pixel-perfect layout: I accurately transfer designs from mockups to live code. Interactivity and dynamics: I bring interfaces to life through smooth animation and fast response. Totally adaptive: I optimize websites for any screen size. Clean design under the hood: I write structured code that is easy to maintain and scale.",
+  "about__skills-title": "Skills"
 }
