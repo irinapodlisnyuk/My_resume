@@ -1,0 +1,41 @@
+.home__card {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &-greetings {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $tangaroa;
+  }
+
+  &-prof {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 84px;
+    color: $tangaroa;
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+
+    color: $shuttle-grey;
+  }
+}
+
+.home__inner {
+  &-block {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $bondi-blue;
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    z-index: -1;
+  }
+}

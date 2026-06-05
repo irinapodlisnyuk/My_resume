@@ -2,6 +2,8 @@ import { HashRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Layout from "./app/layout";
 
+import Home from "./pages/Home/Home";
+
 function App() {
 
   return (
@@ -10,8 +12,8 @@ function App() {
       <Routes>
         {/* Layout — родительский роут, он всегда на экране */}
         <Route path="/" element={<Layout />}>
-          {/* <Route index element={<Home />} />
-          <Route path="login" element={<LoginPage />} /> */}
+          <Route index element={<Home />} />
+          {/* <Route path="login" element={<LoginPage />} /> */}
 
         </Route>
       </Routes>

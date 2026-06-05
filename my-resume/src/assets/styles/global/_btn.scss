@@ -6,7 +6,7 @@
     font-size: 16px;
     line-height: 13px;
     color: $white;
-    background-color: $orange;
+    background-color: $bondi-blue;
     border-radius: 10px;
     padding: 19px 30px;
     cursor: pointer;
@@ -18,6 +18,6 @@
     }
 
     &:hover {
-      background-color: rgba($orange, 0.8);
+      background-color: rgba($bondi-blue, 0.8);
     }
 }

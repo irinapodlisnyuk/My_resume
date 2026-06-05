@@ -21,6 +21,9 @@
     </defs>
     </symbol>
 
+    <symbol id="ellipse" viewBox="0 0 490 478">
+    <ellipse cx="245" cy="239" rx="245" ry="239" transform="rotate(-0.174672 245 239)" fill="#62E5FB" fill-opacity="0.15"/>
+    </symbol>
 
 
 </svg>
