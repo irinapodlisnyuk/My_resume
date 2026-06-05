@@ -1,0 +1,9 @@
+
+{
+  "menu_home": "Home",
+  "menu_about": "About me",
+  "menu_projects": "My Projects",
+  "greetings": "Hi,  I’M  {{name}}",
+  "about_text": "I am a freelancer, Frontend developer, based in Novorossiysk, Russia. I enjoy creating modern, responsive, and intuitive websites and applications that turn your ideas into successful digital products.",
+  "button_resume": "My Resume"
+}
