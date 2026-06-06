@@ -1,16 +1,16 @@
- .home__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    width: 100%;
-    height: 100%;
-    position: relative;
+.home__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  position: relative;
 
-    @include vp-767 {
-      gap: 30px;
-    }
+  @include vp-767 {
+    gap: 30px;
   }
+}
 
 .home__card {
   display: flex;
@@ -98,5 +98,18 @@
     height: auto;
     display: block;
     object-fit: cover;
+    display: block;
+
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 90%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.05));
   }
 }

@@ -68,6 +68,16 @@
           width: 100% !important;
         }
       }
+
+      &.active {
+        color: rgba($bondi-blue, 0.9);
+
+        &::after {
+          width: 100% !important;
+          background: $bondi-blue;
+        }
+      }
+
       &:active {
         color: $dark-turquoise;
       }
@@ -81,10 +91,10 @@
 
   &__lang-btn {
     cursor: pointer;
-    transition:   text-shadow $transition-500;
+    transition: text-shadow $transition-500;
 
     &:hover {
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
   }
 }

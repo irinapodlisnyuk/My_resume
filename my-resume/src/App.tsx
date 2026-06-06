@@ -2,6 +2,7 @@ import styles from "./App.module.scss";
 import { AppHeader } from "@/components/Header/Header";
 import Home from "./pages/Home/Home";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
+import { Projects } from "./pages/Projects/Projects";
 
 function App() {
   return (
@@ -18,10 +19,7 @@ function App() {
         </section>
 
         <section id="projects">
-          {/* <Projects /> */}
-          <div style={{ height: "100vh", padding: "40px" }}>
-            Тут будут проекты
-          </div>
+          <Projects />
         </section>
       </main>
     </div>
