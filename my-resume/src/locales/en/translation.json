@@ -1,4 +1,3 @@
-
 {
   "menu_home": "Home",
   "menu_about": "About me",
@@ -7,6 +6,13 @@
   "about_text": "I am a freelancer, Frontend developer, based in Novorossiysk, Russia. I enjoy creating modern, responsive, and intuitive websites and applications that turn your ideas into successful digital products.",
   "button_resume": "My Resume",
   "about_me": "About Me",
-  "about_me_text":"Hi! I specialize in creating engaging, responsive, and accessible digital experiences for all types of users. I transform ideas into clear and effective websites and apps. My key work standards are: Pixel-perfect layout: I accurately transfer designs from mockups to live code. Interactivity and dynamics: I bring interfaces to life through smooth animation and fast response. Totally adaptive: I optimize websites for any screen size. Clean design under the hood: I write structured code that is easy to maintain and scale.",
-  "about__skills-title": "Skills"
+  "about__skills-title": "Skills",
+  "about_greetings": "Hello! I specialize in creating attractive, responsive, and accessible digital experiences for all types of users. I turn ideas into clean and efficient websites and applications.",
+  "about_standards_title": "My main working standards:",
+  "about_standards": [
+    "<strong>Pixel-Perfect layout:</strong> precisely transferring design from layout to live code.",
+    "<strong>Interactivity and dynamics:</strong> animating interfaces with smooth transitions and fast response.",
+    "<strong>Absolute responsive:</strong> optimizing websites for any screen size.",
+    "<strong>Clean code under the hood:</strong> writing structured code that is easy to maintain and scale."
+  ]
 }
