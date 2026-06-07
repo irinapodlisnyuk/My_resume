@@ -7,40 +7,45 @@ export const ProjectsPage: FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.about__wrapper}>
-      <div className={styles["about__left"]}>
-        <h2 className={styles["about__left-title"]}>{t("about_me")}</h2>
-      </div>
+    <div className={styles.projects__wrapper}>
+      <h2 className={styles["projects__wrapper__title"]}>
+        {t("menu_projects")}
+      </h2>
 
-      <ul className={styles["about__skills-list"]}>
-        <li className={styles["about__skills-item"]}>
-          <Icon
-            name="html"
-            className={`${styles["about__skills-icon"]} ${styles["about__skills-html"]}`}
+      <ul className={styles["projects__card-list"]}>
+        <li className={styles["projects__card-item"]}>
+          <img
+            className={styles["projects__card-image"]}
+            src="/images/studio.png"
+            alt="Изображение сайта подкастов"
           />
-          <span className={styles["about__skills-text"]}>HTML</span>
+
+          <div className={styles["projects__card-top"]}>
+            <h3 className={styles["projects__card-title"]}>
+              {t("projects__card-title")}
+            </h3>
+            <p className={styles["projects__card-text"]}>
+              {t("projects__card-text1")}
+            </p>
+          </div>
+          <div className={styles["projects__card-links"]}>
+            <a href="#" className={styles["projects__link"]}>
+              <Icon
+                name="preview"
+                className={styles["projects__link-icon"]}
+              />
+              <span  className={styles["projects__link-text"]}>Live Preview</span>
+            </a>
+
+             <a href="#" className={styles["projects__card-link"]}>
+              <Icon
+                name="git"
+                className={styles["projects__card-icon"]}
+              />
+              <span  className={styles["projects__link-text"]}>View Code</span>
+            </a>
+          </div>
         </li>
-        <li className={styles["about__skills-item"]}>
-          <Icon name="javaScript" className={styles["about__skills-icon"]} />
-          <span className={styles["about__skills-text"]}>JavaScript</span>
-        </li>
-        <li className={styles["about__skills-item"]}>
-          <Icon
-            name="typeScript"
-            className={`${styles["about__skills-icon"]} ${styles["about__skills-ts"]}`}
-          />
-          <span className={styles["about__skills-text"]}>TypeScript</span>
-        </li>
-        <li className={styles["about__skills-item"]}>
-          <Icon
-            name="react"
-            className={`${styles["about__skills-icon"]} ${styles["about__skills-react"]}`}
-          />
-          <span className={styles["about__skills-text"]}>React</span>
-        </li>
-  
-    
-    
       </ul>
     </div>
   );

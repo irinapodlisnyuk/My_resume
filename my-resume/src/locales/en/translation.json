@@ -15,7 +15,8 @@
     "<strong>Absolute responsive:</strong> optimizing websites for any screen size.",
     "<strong>Clean code under the hood:</strong> writing structured code that is easy to maintain and scale."
   ],
+  "projects__card-title":"Podcast studio",
+   "projects__card-text1": "The goal of this project is to implement the client side of the Audio Player application."
 
 
-  "projects": "My projects"
 }
