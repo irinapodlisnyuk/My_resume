@@ -13,8 +13,8 @@
     transition: background-color $transition-500;
 
     @include vp-767 {
-         font-size: 11px;
-      padding: 10px;
+         font-size: 18px;
+      padding: 15px;
     }
 
     &:hover {

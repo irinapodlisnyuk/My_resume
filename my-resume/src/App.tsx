@@ -3,6 +3,7 @@ import { AppHeader } from "@/components/Header/Header";
 import Home from "./pages/Home/Home";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Projects } from "./pages/Projects/Projects";
+import { AppFooter } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Projects />
         </section>
       </main>
+
+      <AppFooter/>
     </div>
   );
 }

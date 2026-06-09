@@ -15,8 +15,12 @@
     "<strong>Absolute responsive:</strong> optimizing websites for any screen size.",
     "<strong>Clean code under the hood:</strong> writing structured code that is easy to maintain and scale."
   ],
-  "projects__card-title":"Podcast studio",
-   "projects__card-text1": "The goal of this project is to implement the client side of the Audio Player application."
+  "projects__card-title1": "Podcast studio",
+  "projects__card-text1": "The goal of this project is to implement the client side of the Audio Player application.",
 
+  "projects__card-title2": "Travel blog",
+  "projects__card-text2": "The goal of this TravelBlog project is to create a web application for communication and experience sharing among travelers.",
 
+  "projects__card-title3": "VK Marusia",
+  "projects__card-text3": "The goal of this project is to create a movie search functionality and ensure the application is simple and user-friendly."
 }

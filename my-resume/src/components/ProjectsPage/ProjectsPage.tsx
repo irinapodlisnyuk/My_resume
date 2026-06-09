@@ -14,27 +14,31 @@ export const ProjectsPage: FC = () => {
 
       <ul className={styles["projects__card-list"]}>
         <li className={styles["projects__card-item"]}>
-          <img
-            className={styles["projects__card-image"]}
-            src="/images/studio.png"
-            alt="Изображение сайта подкастов"
-          />
+          <div className={styles["projects__card-inner"]}>
+            <img
+              className={styles["projects__card-image"]}
+              src="/images/studio.png"
+              alt="Изображение сайта подкастов"
+            />
+          </div>
           <div className={styles["projects__card-wrapper"]}>
             <div className={styles["projects__card-top"]}>
               <h3 className={styles["projects__card-title"]}>
-                {t("projects__card-title")}
+                {t("projects__card-title1")}
               </h3>
               <p className={styles["projects__card-text"]}>
                 {t("projects__card-text1")}
               </p>
               <span className={styles["projects__card-stack"]}>
-                Tech stack : HTML , JavaScript,TypeScript, SASS
+                Tech stack : HTML, JavaScript, TypeScript, SASS, Webpack
               </span>
             </div>
             <div className={styles["projects__card-links"]}>
               <a
-                href="https://irinapodlisnyuk.github.io/VibeCast-Studio/"
+                href="https://vibecast-frontend.vercel.app/"
                 className={styles["projects__link"]}
+                target="_blank"
+                rel="noreferrer"
               >
                 <Icon
                   name="preview"
@@ -48,6 +52,8 @@ export const ProjectsPage: FC = () => {
               <a
                 href="https://github.com/irinapodlisnyuk/VibeCast-Studio"
                 className={styles["projects__link"]}
+                target="_blank"
+                rel="noreferrer"
               >
                 <Icon name="git" className={styles["projects__link-icon"]} />
                 <span className={styles["projects__link-text"]}>View Code</span>
@@ -55,62 +61,102 @@ export const ProjectsPage: FC = () => {
             </div>
           </div>
         </li>
+
         <li className={styles["projects__card-item"]}>
-          <img
-            className={styles["projects__card-image"]}
-            src="/images/studio.png"
-            alt="Изображение сайта подкастов"
-          />
-
-          <div className={styles["projects__card-top"]}>
-            <h3 className={styles["projects__card-title"]}>
-              {t("projects__card-title")}
-            </h3>
-            <p className={styles["projects__card-text"]}>
-              {t("projects__card-text1")}
-            </p>
+          <div className={styles["projects__card-inner"]}>
+            <img
+              className={styles["projects__card-image"]}
+              src="/images/travel.png"
+              alt="Изображение сайта путешествий"
+            />
           </div>
-          <div className={styles["projects__card-links"]}>
-            <a href="#" className={styles["projects__link"]}>
-              <Icon name="preview" className={styles["projects__link-icon"]} />
-              <span className={styles["projects__link-text"]}>
-                Live Preview
+          <div className={styles["projects__card-wrapper"]}>
+            <div className={styles["projects__card-top"]}>
+              <h3 className={styles["projects__card-title"]}>
+                {t("projects__card-title2")}
+              </h3>
+              <p className={styles["projects__card-text"]}>
+                {t("projects__card-text2")}
+              </p>
+              <span className={styles["projects__card-stack"]}>
+                Tech stack : HTML ,TypeScript, React, Vite, SASS
               </span>
-            </a>
+            </div>
+            <div className={styles["projects__card-links"]}>
+              <a
+                href="https://travel-blog-hy17.onrender.com"
+                className={styles["projects__link"]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  name="preview"
+                  className={styles["projects__link-icon"]}
+                />
+                <span className={styles["projects__link-text"]}>
+                  Live Preview
+                </span>
+              </a>
 
-            <a href="#" className={styles["projects__link"]}>
-              <Icon name="git" className={styles["projects__link-icon"]} />
-              <span className={styles["projects__link-text"]}>View Code</span>
-            </a>
+              <a
+                href="https://github.com/irinapodlisnyuk/Travel__blog"
+                className={styles["projects__link"]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon name="git" className={styles["projects__link-icon"]} />
+                <span className={styles["projects__link-text"]}>View Code</span>
+              </a>
+            </div>
           </div>
         </li>
+
         <li className={styles["projects__card-item"]}>
-          <img
-            className={styles["projects__card-image"]}
-            src="/images/studio.png"
-            alt="Изображение сайта подкастов"
-          />
-
-          <div className={styles["projects__card-top"]}>
-            <h3 className={styles["projects__card-title"]}>
-              {t("projects__card-title")}
-            </h3>
-            <p className={styles["projects__card-text"]}>
-              {t("projects__card-text1")}
-            </p>
+          <div className={styles["projects__card-inner"]}>
+            <img
+              className={styles["projects__card-image"]}
+              src="/images/vk.png"
+              alt="Изображение сайта vk-маруся"
+            />
           </div>
-          <div className={styles["projects__card-links"]}>
-            <a href="#" className={styles["projects__link"]}>
-              <Icon name="preview" className={styles["projects__link-icon"]} />
-              <span className={styles["projects__link-text"]}>
-                Live Preview
+          <div className={styles["projects__card-wrapper"]}>
+            <div className={styles["projects__card-top"]}>
+              <h3 className={styles["projects__card-title"]}>
+                {t("projects__card-title3")}
+              </h3>
+              <p className={styles["projects__card-text"]}>
+                {t("projects__card-text3")}
+              </p>
+              <span className={styles["projects__card-stack"]}>
+                Tech stack : HTML, TypeScript, React,Vite, SASS
               </span>
-            </a>
+            </div>
+            <div className={styles["projects__card-links"]}>
+              <a
+                href="https://my-project-vk.onrender.com"
+                className={styles["projects__link"]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  name="preview"
+                  className={styles["projects__link-icon"]}
+                />
+                <span className={styles["projects__link-text"]}>
+                  Live Preview
+                </span>
+              </a>
 
-            <a href="#" className={styles["projects__link"]}>
-              <Icon name="git" className={styles["projects__link-icon"]} />
-              <span className={styles["projects__link-text"]}>View Code</span>
-            </a>
+              <a
+                href="https://github.com/irinapodlisnyuk/my-project-vk"
+                className={styles["projects__link"]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon name="git" className={styles["projects__link-icon"]} />
+                <span className={styles["projects__link-text"]}>View Code</span>
+              </a>
+            </div>
           </div>
         </li>
       </ul>

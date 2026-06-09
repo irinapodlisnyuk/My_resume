@@ -23,9 +23,9 @@ export const AboutMePage: FC = () => {
           <p className={styles["about__right-greetings"]}>
             {t("about_greetings")}
           </p>
-          <h3 className={styles["about__right-subtitle"]}>
+          <p className={styles["about__right-subtitle"]}>
             {t("about_standards_title")}
-          </h3>
+          </p>
           <ul className={styles["about__right-list"]}>
             {Array.isArray(standards) &&
               standards.map((item, index) => (
