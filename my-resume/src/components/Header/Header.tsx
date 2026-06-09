@@ -62,6 +62,11 @@ export const AppHeader = () => {
                   {t("menu_projects")}
                 </a>
               </li>
+                <li className={styles["header__top-item"]}>
+                <a href="#contacts"  className={`${styles["header__top-link"]} ${activeSection === "contacts" ? styles.active : ""}`}>
+                  {t("menu_contacts")}
+                </a>
+              </li>
             </ul>
           </div>
           <div className={styles["header__lang-switcher"]}>

@@ -22,6 +22,9 @@ function App() {
         <section id="projects">
           <Projects />
         </section>
+         <section id="contacts">
+          
+        </section>
       </main>
 
       <AppFooter/>
