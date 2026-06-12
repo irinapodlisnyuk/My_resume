@@ -25,5 +25,8 @@
   "projects__card-title3": "VK Marusia",
   "projects__card-text3": "The goal of this project is to create a movie search functionality and ensure the application is simple and user-friendly.",
 
-  "contacts__title": "Contact Me"
+  "contacts__title": "Contact Me",
+  "contacts__text": "I would be happy to chat with you. Please feel free to call, email me, or just fill out the request form.",
+
+  "contacts__form-title": "Send me a message"
 }
