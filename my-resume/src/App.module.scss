@@ -1,13 +1,13 @@
 .home {
   padding: 85px 0 0;
-  width:100%;
+  width: 100%;
   background: linear-gradient(to right, #ffffff 69%, #0097b2 75%);
   height: 100%;
   z-index: -1;
 
   @include vp-767 {
     padding: 90px 0 0;
-     background: $white;
+    background: $white;
   }
 }
 
@@ -17,5 +17,10 @@
 }
 
 .projects {
- background-color: $whiteSmoke;
+  background-color: $whiteSmoke;
+}
+
+.contacts {
+  padding: 170px 0 0;
+  background-color: rgba($turquoise-blue, 0.15);
 }

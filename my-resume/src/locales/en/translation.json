@@ -28,5 +28,12 @@
   "contacts__title": "Contact Me",
   "contacts__text": "I would be happy to chat with you. Please feel free to call, email me, or just fill out the request form.",
 
-  "contacts__form-title": "Send me a message"
+  "contacts__form-title": "Send me a message",
+
+  "input__name": "Name",
+  "input__email": "Email Adress",
+  "input__message": "Your message",
+  "btn_form": "Send message",
+
+  "modal_text":"Your message has been sent."
 }

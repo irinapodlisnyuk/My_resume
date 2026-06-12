@@ -1,6 +1,3 @@
-@use "../../../app/scss/global/variables" as *;
-@use "../../../app/scss/global/mixins" as *;
-
 .form-field {
   display: flex;
   flex-direction: column;
@@ -43,22 +40,22 @@
 
 .form-field.error-message__login {
   .custom__login {
-    border: 1px solid $salmon !important;
+    //border: 1px solid $salmon !important;
   }
 
   .form-field__control {
     svg,
     .custom__email-icon,
     .custom__key-icon {
-      color: $salmon !important;
+      //color: $salmon !important;
     }
   }
 }
 
 .form-field.error-message__register {
-  color: $salmon !important;
+ // color: $salmon !important;
   .custom__register {
-    border: 1px solid $salmon !important;
+   // border: 1px solid $salmon !important;
   }
 
   .form-field__control {
@@ -66,7 +63,7 @@
     .custom__name-icon,
     .custom__email-icon,
     .custom__key-icon {
-      color: $salmon !important;
+    //  color: $salmon !important;
     }
   }
 }
