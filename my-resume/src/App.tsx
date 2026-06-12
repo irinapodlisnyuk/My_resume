@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Projects } from "./pages/Projects/Projects";
 import { AppFooter } from "./components/Footer/Footer";
+import Contacts from "./pages/Contacts/Contacts";
 
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
         <section id="projects">
           <Projects />
         </section>
-         <section id="contacts">
-          
+         <section id="contacts"  className={styles.contacts}>
+          <Contacts/>
         </section>
       </main>
 

@@ -8,7 +8,7 @@
   "button_resume": "My Resume",
   "about_me": "About Me",
   "about__skills-title": "Skills",
-  "about_greetings": "Hello! I specialize in creating attractive, responsive, and accessible digital experiences for all types of users. I turn ideas into clean and efficient websites and applications.",
+  "about_greetings": "Hi! I am a Junior Frontend Developer. I have successfully completed the Frontend Developer Professional course at Skillbox, where I mastered React, TypeScript, and modern web standards.",
   "about_standards_title": "My main working standards:",
   "about_standards": [
     "<strong>Pixel-Perfect layout:</strong> precisely transferring design from layout to live code.",
@@ -23,5 +23,7 @@
   "projects__card-text2": "The goal of this TravelBlog project is to create a web application for communication and experience sharing among travelers.",
 
   "projects__card-title3": "VK Marusia",
-  "projects__card-text3": "The goal of this project is to create a movie search functionality and ensure the application is simple and user-friendly."
+  "projects__card-text3": "The goal of this project is to create a movie search functionality and ensure the application is simple and user-friendly.",
+
+  "contacts__title": "Contact Me"
 }
