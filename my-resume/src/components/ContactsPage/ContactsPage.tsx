@@ -9,7 +9,8 @@ export const ContactsPage = () => {
     <div className={styles["contacts__wrapper"]}>
       <img
         className={styles["contacts__image"]}
-        src="/images/working.png"
+        // src="/images/working.png"
+         src={`${import.meta.env.BASE_URL}images/working.png`}
         alt="girl image"
       />
       <div className={styles["contacts__inner"]}>

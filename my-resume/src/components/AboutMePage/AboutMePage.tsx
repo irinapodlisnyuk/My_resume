@@ -14,7 +14,8 @@ export const AboutMePage: FC = () => {
         <h2 className={styles["about__left-title"]}>{t("about_me")}</h2>
         <img
           className={styles["about__left-image"]}
-          src="/images/img-girl.png"
+          // src="/images/img-girl.png"
+          src={`${import.meta.env.BASE_URL}images/img-girl.png`}
           alt="girl image"
         />
       </div>

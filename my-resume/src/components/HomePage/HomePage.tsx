@@ -56,7 +56,8 @@ export const HomePage = ({ info }: CardProps) => {
           <Icon name="ellipse" className={styles["home__inner-icon"]} />
           <img
             className={styles["home__inner-image"]}
-            src="/images/girl.png"
+            // src="/images/girl.png"
+             src={`${import.meta.env.BASE_URL}images/girl.png`}
             alt="My foto"
           />
         </div>

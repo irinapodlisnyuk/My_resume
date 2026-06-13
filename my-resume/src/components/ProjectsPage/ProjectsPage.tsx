@@ -17,7 +17,8 @@ export const ProjectsPage: FC = () => {
           <div className={styles["projects__card-inner"]}>
             <img
               className={styles["projects__card-image"]}
-              src="/images/studio.png"
+              // src="/images/studio.png"
+               src={`${import.meta.env.BASE_URL}images/studio.png`}
               alt="Изображение сайта подкастов"
             />
           </div>
@@ -66,7 +67,8 @@ export const ProjectsPage: FC = () => {
           <div className={styles["projects__card-inner"]}>
             <img
               className={styles["projects__card-image"]}
-              src="/images/travel.png"
+              // src="/images/travel.png"
+               src={`${import.meta.env.BASE_URL}images/travel.png`}
               alt="Изображение сайта путешествий"
             />
           </div>
@@ -115,7 +117,8 @@ export const ProjectsPage: FC = () => {
           <div className={styles["projects__card-inner"]}>
             <img
               className={styles["projects__card-image"]}
-              src="/images/vk.png"
+              // src="/images/vk.png"
+               src={`${import.meta.env.BASE_URL}images/vk.png`}
               alt="Изображение сайта vk-маруся"
             />
           </div>
