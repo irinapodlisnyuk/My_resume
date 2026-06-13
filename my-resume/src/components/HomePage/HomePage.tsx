@@ -45,7 +45,7 @@ export const HomePage = ({ info }: CardProps) => {
         <a
           className={`${styles["home__card-btn"]} ${styles.btn}`}
           href="/files/resume.pdf"
-          download="Resume_Podlisnyuk_Iriny.pdf"
+          download="Resume_Podlisnyuk.pdf"
         >
           {t("button_resume")}
         </a>
