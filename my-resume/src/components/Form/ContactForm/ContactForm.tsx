@@ -21,6 +21,9 @@ const ContactSchema = z.object({
     .string()
     .min(10, "Сообщение должно быть не менее 10 символов")
     .max(1000, "Максимум 1000 символов"),
+  acceptTerms: z.boolean().refine((val) => val === true, {
+    message: "Необходимо согласиться с условиями",
+  }),
 });
 
 type ContactFormValues = z.infer<typeof ContactSchema>;
@@ -58,6 +61,7 @@ export const ContactForm: FC<ContactFormProps> = ({ onSuccess }) => {
       name: "",
       email: "",
       message: "",
+      acceptTerms: false,
     },
   });
 
@@ -136,6 +140,29 @@ export const ContactForm: FC<ContactFormProps> = ({ onSuccess }) => {
             <div className={stylesInput["form-post__textarea-counter"]}>
               {messageValue.length} / 1000
             </div>
+          </div>
+        </FormField>
+
+        <FormField
+          className={
+            errors.acceptTerms ? `${stylesError["error-message__contact"]}` : ""
+          }
+          errorMessage={errors.acceptTerms?.message}
+        >
+          <div className={stylesInput["form-checkbox-wrapper"]}>
+            <input
+              type="checkbox"
+              id="acceptTerms"
+              className={stylesInput["custom__checkbox"]}
+              {...register("acceptTerms")}
+            />
+            <label
+              htmlFor="acceptTerms"
+              className={stylesInput["custom__checkbox-label"]}
+            >
+              {t("accept_terms_text") ||
+                "Я согласен на обработку персональных данных"}
+            </label>
           </div>
         </FormField>
 

@@ -35,5 +35,7 @@
   "input__message": "Your message",
   "btn_form": "Send message",
 
-  "modal_text":"Your message has been sent."
+  "modal_text":"Your message has been sent.",
+
+  "button_policy": "Privacy policy and personal data processing."
 }
