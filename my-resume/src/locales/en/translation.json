@@ -37,5 +37,7 @@
 
   "modal_text":"Your message has been sent.",
 
+  "custom__checkbox_text": "I agree to the processing of personal data",
+
   "button_policy": "Privacy policy and personal data processing."
 }

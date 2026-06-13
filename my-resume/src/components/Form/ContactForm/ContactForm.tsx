@@ -12,6 +12,8 @@ import { useTranslation } from "react-i18next";
 import styles from "./ContactForm.module.scss";
 import stylesInput from "./Custom__contact.module.scss";
 import stylesError from "@/components/Form/FormField/FormField.module.scss";
+import stylesCheckbox from "./Checkbox-from.module.scss";
+import Icon from "@/components/types/Icon";
 
 // Схема валидации Zod,
 const ContactSchema = z.object({
@@ -149,19 +151,25 @@ export const ContactForm: FC<ContactFormProps> = ({ onSuccess }) => {
           }
           errorMessage={errors.acceptTerms?.message}
         >
-          <div className={stylesInput["form-checkbox-wrapper"]}>
+          <div className={stylesCheckbox["checkbox-from__wrapper"]}>
             <input
               type="checkbox"
               id="acceptTerms"
-              className={stylesInput["custom__checkbox"]}
+              className={stylesCheckbox["custom__checkbox"]}
               {...register("acceptTerms")}
+
             />
             <label
               htmlFor="acceptTerms"
-              className={stylesInput["custom__checkbox-label"]}
+              className={stylesCheckbox["custom__checkbox-label"]}
             >
-              {t("accept_terms_text") ||
+              {t("custom__checkbox_text") ||
                 "Я согласен на обработку персональных данных"}
+              <Icon
+                name="icon-check"
+                className={stylesCheckbox["custom__checkbox-icon"]}
+                aria-hidden="true"
+              />
             </label>
           </div>
         </FormField>
