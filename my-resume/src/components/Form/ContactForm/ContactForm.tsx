@@ -11,7 +11,7 @@ import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 import styles from "./ContactForm.module.scss";
 import stylesInput from "./Custom__contact.module.scss";
-import stylesError from "@/components/Form/FormField/FormField.module.scss"
+import stylesError from "@/components/Form/FormField/FormField.module.scss";
 
 // Схема валидации Zod,
 const ContactSchema = z.object({
@@ -140,7 +140,11 @@ export const ContactForm: FC<ContactFormProps> = ({ onSuccess }) => {
         </FormField>
 
         {/* Кнопка отправки */}
-        <Button type="submit" isLoading={contactMutation.isPending}>
+        <Button
+          type="submit"
+          isLoading={contactMutation.isPending}
+          className={`${styles["contact-form__btn"]} ${styles.btn}`}
+        >
           {t("btn_form")}
         </Button>
       </form>
