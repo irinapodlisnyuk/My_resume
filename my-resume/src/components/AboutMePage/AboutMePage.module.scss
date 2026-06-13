@@ -208,6 +208,7 @@
       padding: 15px;
       border-radius: 41px;
       flex-shrink: 0;
+      cursor: pointer;
 
       @include vp-767 {
         gap: 10px;
