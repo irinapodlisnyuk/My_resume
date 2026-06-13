@@ -44,7 +44,7 @@ export const HomePage = ({ info }: CardProps) => {
         <p className={styles["home__card-text"]}>{t("about_text")}</p>
         <a
           className={`${styles["home__card-btn"]} ${styles.btn}`}
-          href="/files/resume.pdf"
+           href={`${import.meta.env.BASE_URL}files/resume.pdf`}
           download="Resume_Podlisnyuk.pdf"
         >
           {t("button_resume")}

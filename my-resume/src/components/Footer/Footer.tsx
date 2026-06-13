@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.scss";
 export const AppFooter = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -10,7 +10,7 @@ export const AppFooter = () => {
 
           <a
             className={styles["footer__wrapper-btn"]}
-            href="/files/policy.pdf"
+            href={`${import.meta.env.BASE_URL}files/policy.pdf`}
             download="Privacy policy.pdf"
           >
             {t("button_policy")}
