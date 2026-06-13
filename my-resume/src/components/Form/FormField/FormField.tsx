@@ -1,23 +1,22 @@
 import { FC, ReactNode } from "react";
-import './FormField.scss'
+import styles from "./FormField.module.scss";
 
 interface IFormFieldProps {
   children: ReactNode;
   errorMessage?: string;
-  className?: string; 
+  className?: string;
 }
 
 export const FormField: FC<IFormFieldProps> = ({
   children,
   errorMessage,
-  className = "", 
+  className = "",
 }) => {
   return (
-
-    <label className={`form-field ${className}`}> 
-      <div className="form-field__control">{children}</div>
+    <label className={`${styles["form-field"]} ${className}`}>
+      <div className={styles["form-field__control"]}>{children}</div>
       {errorMessage && (
-        <span className="form-field__error-text">{errorMessage}</span>
+        <span className={styles["form-field__error-text"]}>{errorMessage}</span>
       )}
     </label>
   );

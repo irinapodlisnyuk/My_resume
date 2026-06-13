@@ -1,26 +1,39 @@
 .contacts {
   &__wrapper {
     display: flex;
-    max-width: 970px;
+    max-width: 750px;
     position: relative;
-    margin: 0 auto 80px;
+    margin: 0 auto;
+
+    @include vp-1023 {
+    }
   }
 
   &__image {
-    width: 210px;
-    height: 420px;
     position: absolute;
-    bottom: 165px;
-    left: -90px;
+    bottom: 246px;
+    left: -64px;
+
+    @include vp-767 {
+      display: none;
+    }
   }
 
   &__inner {
     display: grid;
     border-radius: 20px;
-    background-color: rgba($turquoise-blue, 0.6);
+    background-color: rgba($turquoise-blue, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     grid-template-columns: 1fr 1fr;
     padding: 22px 40px;
     gap: 30px;
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      
+    }
   }
 
   &__info {
@@ -42,6 +55,10 @@
       font-size: 14px;
       color: $shuttle-grey;
       margin: 0 0 50px;
+
+      @include vp-767 {
+        margin: 0;
+      }
     }
   }
 
@@ -55,28 +72,41 @@
       display: flex;
       align-items: center;
       gap: 5px;
+
+      &:hover {
+        .contacts__contact-text {
+          color: $bondi-blue;
+        }
+
+        .contacts__contact-icon {
+          background-color: rgba($bondi-blue, 0.6);
+        }
+      }
     }
 
     &-icon {
-      width: 40px;
-      height: 40px;
+      width: 37px;
+      height: 37px;
       border-radius: 12px;
-      padding: 10px;
+      padding: 10px 8px 8px 10px;
       background-color: $bondi-blue;
+      transition: background-color $transition-500;
     }
 
     &-text {
       font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
+      font-weight: 400;
+      font-size: 14px;
       color: $tangaroa;
+      transition: color $transition-500;
     }
   }
+
   &__form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
+
     &-title {
       font-style: normal;
       font-weight: 700;

@@ -9,7 +9,9 @@ import { queryClient } from "@/api/queryClient";
 import { ModalOpen } from "@/components/ModalOpen/ModalOpen";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
-import styles from "./Custom__contact.module.scss";
+import styles from "./ContactForm.module.scss";
+import stylesInput from "./Custom__contact.module.scss";
+import stylesError from "@/components/Form/FormField/FormField.module.scss"
 
 // Схема валидации Zod,
 const ContactSchema = z.object({
@@ -78,21 +80,21 @@ export const ContactForm: FC<ContactFormProps> = ({ onSuccess }) => {
   return (
     <>
       <form
-        className="contact-form"
+        className={styles["contact-form"]}
         onSubmit={handleSubmit((data) => contactMutation.mutate(data))}
       >
         {/* Поле Имя */}
         <FormField
           className={
             errors.name || contactMutation.isError
-              ? "error-message__contact"
+              ? `${stylesError["error-message__contact"]}`
               : ""
           }
           errorMessage={errors.name?.message}
         >
           <input
             type="text"
-            className="custom__contact"
+            className={stylesInput["custom__contact"]}
             placeholder={t("input__name")}
             {...register("name")}
           />
@@ -102,33 +104,36 @@ export const ContactForm: FC<ContactFormProps> = ({ onSuccess }) => {
         <FormField
           className={
             errors.email || contactMutation.isError
-              ? "error-message__contact"
+              ? `${stylesError["error-message__contact"]}`
               : ""
           }
           errorMessage={errors.email?.message}
         >
           <input
             type="email"
-            className="custom__contact"
+            className={stylesInput["custom__contact"]}
             placeholder={t("input__email")}
             {...register("email")}
           />
         </FormField>
 
-        {/* Поле Сообщение (Textarea с каунтером букв) */}
         <FormField
+          className={
+            errors.message || contactMutation.isError
+              ? `${stylesError["error-message__contact"]}`
+              : ""
+          }
           errorMessage={errors.message?.message}
-          className="form-post__field--textarea"
         >
-          <div className="form-post__textarea-wrapper">
+          <div className={stylesInput["form-post__textarea-wrapper"]}>
             <textarea
               {...register("message")}
               placeholder={t("input__message")}
               rows={8}
               maxLength={1000}
-              className={`custom__input textarea ${errors.message ? "textareaError" : ""}`}
+              className={stylesInput["custom__textarea"]}
             />
-            <div className="form-post__textarea-counter">
+            <div className={stylesInput["form-post__textarea-counter"]}>
               {messageValue.length} / 1000
             </div>
           </div>
