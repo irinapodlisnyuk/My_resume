@@ -12,7 +12,6 @@ export const AppHeader = () => {
   };
 
    useEffect(() => {
-    // Находим все секции, за которыми нужно следить
     const sections = document.querySelectorAll("section[id]");
 
     const observer = new IntersectionObserver(
@@ -53,7 +52,7 @@ export const AppHeader = () => {
                 </a>
               </li>
               <li className={styles["header__top-item"]}>
-                <a href="#aboutMe"  className={`${styles["header__top-link"]} ${activeSection === "aboutMe" ? styles.active : ""}`}>
+                <a href="#aboutMe"  className={`${styles["header__top-link"]} ${styles["header__top-link-me"]} ${activeSection === "aboutMe" ? styles.active : ""}`}>
                   {t("menu_about")}
                 </a>
               </li>

@@ -51,7 +51,8 @@
       gap: 40px;
 
       @include vp-767 {
-        justify-content: space-between;
+        //justify-content: space-between;
+        justify-content: center;
         width: 100%;
         gap: 15px;
       }
@@ -68,6 +69,7 @@
 
       @include vp-767 {
         font-size: 14px;
+        display: none;
       }
 
       &::after {
@@ -83,6 +85,10 @@
           width $transition-500,
           background $transition-500;
         transform: translateX(-50%);
+
+         @include vp-767 {
+          display: none;
+        }
       }
 
       &:hover,
@@ -107,6 +113,14 @@
       &:active {
         color: $dark-turquoise;
       }
+
+      &-me {
+        @include vp-767 {
+          display: block;
+          font-size: 18px;
+          text-transform: lowercase;
+        }
+      }
     }
   }
 
@@ -116,7 +130,7 @@
 
     @include vp-767 {
       gap: 10px;
-      display: none;
+      //  display: none;
     }
   }
 
