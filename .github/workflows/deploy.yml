@@ -26,12 +26,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
+          cache: 'npm'
+          cache-dependency-path: 'my-resume/package-lock.json'
 
       - name: Install dependencies
         run: |
           cd my-resume
-          npm install
+          npm ci
 
       - name: Build project
         run: |
@@ -45,4 +47,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
