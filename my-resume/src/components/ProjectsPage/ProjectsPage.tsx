@@ -162,6 +162,56 @@ export const ProjectsPage: FC = () => {
             </div>
           </div>
         </li>
+
+         <li className={styles["projects__card-item"]}>
+          <div className={styles["projects__card-inner"]}>
+            <img
+              className={styles["projects__card-image"]}
+              // src="/images/vk.png"
+               src={`${import.meta.env.BASE_URL}images/dental.png`}
+              alt="Изображение сайта стоматологии"
+            />
+          </div>
+          <div className={styles["projects__card-wrapper"]}>
+            <div className={styles["projects__card-top"]}>
+              <h3 className={styles["projects__card-title"]}>
+                {t("projects__card-title4")}
+              </h3>
+              <p className={styles["projects__card-text"]}>
+                {t("projects__card-text4")}
+              </p>
+              <span className={styles["projects__card-stack"]}>
+                Tech stack : HTML, TypeScript, React, SASS
+              </span>
+            </div>
+            <div className={styles["projects__card-links"]}>
+              <a
+                href="https://stomatology-k32.vercel.app/"
+                className={styles["projects__link"]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  name="preview"
+                  className={styles["projects__link-icon"]}
+                />
+                <span className={styles["projects__link-text"]}>
+                  Live Preview
+                </span>
+              </a>
+
+              <a
+                href="https://github.com/irinapodlisnyuk/stomatology-k32"
+                className={styles["projects__link"]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon name="git" className={styles["projects__link-icon"]} />
+                <span className={styles["projects__link-text"]}>View Code</span>
+              </a>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   );

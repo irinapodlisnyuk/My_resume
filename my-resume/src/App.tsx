@@ -23,6 +23,7 @@ function App() {
         <section id="projects">
           <Projects />
         </section>
+        
          <section id="contacts"  className={styles.contacts}>
           <Contacts/>
         </section>

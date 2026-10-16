@@ -25,6 +25,9 @@
   "projects__card-title3": "VK Marusia",
   "projects__card-text3": "The goal of this project is to create a movie search functionality and ensure the application is simple and user-friendly.",
 
+  "projects__card-title4": "Dental Clinic",
+  "projects__card-text4": "The goal of this project was to create a functional website for a dental clinic, ensure the simplicity and usability of the website, structure information about the clinic's services, introduce the medical team, and launch a helpful medical blog for patients.",
+
   "contacts__title": "Contact Me",
   "contacts__text": "I would be happy to chat with you. Please feel free to call, email me, or just fill out the request form.",
 
@@ -35,7 +38,7 @@
   "input__message": "Your message",
   "btn_form": "Send message",
 
-  "modal_text":"Your message has been sent.",
+  "modal_text": "Your message has been sent.",
 
   "custom__checkbox_text": "I agree to the processing of personal data",
 
